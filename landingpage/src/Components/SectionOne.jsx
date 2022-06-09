@@ -13,7 +13,7 @@ const SectionOne = () => {
                     <button>Learn More</button>
                 </div>
             </div>
-            <div>
+            <div className='imageContainer'>
                 <img src={building} alt="" />
             </div>
         </div>

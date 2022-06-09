@@ -18,6 +18,7 @@
     .link {
         display: none;
         @media screen and (max-width: 700px) {
+            background-color: #fef5f1;
             display: flex;
             flex-direction: column;
             position: absolute;
@@ -90,44 +91,222 @@
     align-items: center;
     justify-content: space-between;
 
+    @media screen and (max-width: 700px) {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .firstArea {
         flex-basis: 40%;
+        @media screen and (max-width: 1105px) {
+            flex-basis: 50%;
+        }
+        @media screen and (max-width: 932px) {
+            flex-basis: 60%;
+        }
+        @media screen and (max-width: 878px) {
+            flex-basis: 70%;
+        }
     }
 
     h1 {
         font-size: 52px;
         margin-bottom: 20px;
+        color: #333333;
+        @media screen and (max-width: 1025px) {
+            font-size: 48px;
+        }
+        @media screen and (max-width: 979px) {
+            font-size: 44px;
+        }
+        @media screen and (max-width: 837px) {
+            font-size: 30px;
+        }
         span {
             color: #a44512;
         }
+        @media screen and (max-width: 990px) {
+            margin-bottom: 20px;
+        }
     }
 
-    p{
+    p {
         margin-bottom: 20px;
         color: #333333;
-        max-width: 33vw;
+        font-size: 18px;
+        text-align: justify;
+
+        @media screen and (max-width: 990px) {
+            margin-bottom: 20px;
+            color: #333333;
+            font-size: 16px;
+        }
     }
+    .imageContainer {
+        display: flex;
+        justify-content: flex-end;
+        img {
+            margin-top: 20px;
+            width: 90%;
+            @media screen and (max-width: 990px) {
+                width: 70%;
+            }
+            @media screen and (max-width: 700px) {
+                width: 100%;
+            }
+        }
+    }
+
+    .buttonContainer {
+        display: flex;
+        .buttonOne {
+            background-color: #190e2c;
+            color: #ffffff;
+            border-radius: 4px;
+            font-size: 16px;
+            padding: 13px 30px;
+            margin-right: 30px;
+
+            @media screen and (max-width: 900px) {
+                padding: 13px 30px;
+            }
+            @media screen and (max-width: 843px) {
+                padding: 10px 20px;
+            }
+            @media screen and (max-width: 837px) {
+                font-size: 12px;
+            }
+            @media screen and (max-width: 773px) {
+                padding: 10px 13px;
+            }
+        }
+
+        button {
+            color: #190e2c;
+            background-color: #ffffff;
+            border-radius: 4px;
+            font-size: 16px;
+            padding: 13px 30px;
+
+            @media screen and (max-width: 900px) {
+                padding: 13px 20px;
+            }
+            @media screen and (max-width: 843px) {
+                padding: 10px 20px;
+            }
+            @media screen and (max-width: 837px) {
+                font-size: 12px;
+            }
+            @media screen and (max-width: 773px) {
+                padding: 10px 13px;
+            }
+        }
+    }
+}
+
+.sectionTwo {
+    margin-top: 20px;
+    background-color: #fdf2ed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    @media screen and (max-width:700px) {
+        flex-direction: column;
+    }
+    
+    .textDiv{
+        flex-basis: 50%;
+    }
+
     img {
-        margin-top: 20px;
-        width: 90%;
+        margin-left: 90px;
+        padding-top: 60px;
+        @media screen and(max-width:700px) {
+            margin-left: 0px;
+            max-width: 250px;
+        }
     }
 
-    .buttonOne {
-        background-color: #190e2c;
-        color: #ffffff;
-        border-radius: 4px;
-        font-size: 16px;
-        width: 150px;
-        height: 50px;
-        margin-right: 30px;
-    }
-
-    button {
+    h1 {
         color: #190e2c;
-        background-color: #ffffff;
-        border-radius: 4px;
-        font-size: 16px;
-        width: 150px;
-        height: 50px;
+        font-size: 40px;
+        @media screen and (max-width:961px) {
+            font-size: 35px;
+        }
+        @media screen and (max-width:950px) {
+            padding-left: 30px;
+            padding-right: 0px;
+        }
+        @media screen and(max-width:700px) {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+
+    p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #333333;
+        font-size: 18px;
+        padding-right: 180px;
+        text-align: justify;
+        @media screen and (max-width:1149px) {
+            padding-right: 100px;
+        }
+        @media screen and (max-width:950px) {
+            padding-left: 30px;
+            font-size: 16px;
+            padding-right: 0px;
+        }
+        @media screen and(max-width:700px) {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+    .buttonHolder{
+        display: flex;
+        @media screen and (max-width:950px) {
+            padding-left: 30px;
+        }
+        @media screen and(max-width:700px) {
+            padding-left: 0px;
+        }
+
+        button{
+            
+            &:first-child{
+                color: #ffffff;
+                background-color: #190E2C;
+                padding: 15px 25px;
+                border-radius: 4px;
+                font-size: 16px;
+                @media screen and (max-width:950px) {
+                    font-size: 14px;
+                    padding: 10px 20px;
+                }
+                @media screen and (max-width:738px) {
+                    padding: 10px 15px;
+                }
+            }
+            &:last-child{
+                color: #190E2C;
+                padding: 15px 25px;
+                border-radius: 4px;
+                font-size: 16px;
+                background-color: #FDF2ED;
+                margin-left: 30px;
+                @media screen and (max-width:950px) {
+                    font-size: 14px;
+                    padding: 10px 20px;
+                }
+                @media screen and (max-width:738px) {
+                    margin-left: 5px;
+                    padding: 10px 15px;
+                }
+            }
+        }
+
     }
 }
