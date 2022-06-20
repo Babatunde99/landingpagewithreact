@@ -408,7 +408,7 @@
             margin-right: 5px;
         }
     }
-    .see{
+    .see {
         margin-top: 30px;
         display: flex;
         justify-content: center;
@@ -425,32 +425,73 @@
     }
 }
 
-.SectionFour{
+.SectionFour {
     @media screen and (max-width: 700px) {
         padding-left: 20px;
         padding-right: 20px;
     }
-    h1{
+    h1 {
         display: flex;
         justify-content: center;
         margin-bottom: 30px;
     }
-    h3{
+    h3 {
         display: flex;
         justify-content: center;
         margin-bottom: 50px;
         @media screen and (max-width: 700px) {
             text-align: center;
         }
-    }    
-    .images{
+    }
+    .images {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        .img{
+        .img {
             width: 270px;
             margin-bottom: 40px;
         }
     }
 }
 
+.footer {
+    background: #e5e5e5;
+    margin-top: 100px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media screen and (max-width:700px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainlogo{
+        @media screen and (max-width: 900px) {
+            width: 150px;
+            padding-bottom: 20px;
+        }
+    }
+    h4 {
+        margin-bottom: 20px;
+        @media screen and (max-width:700px) {
+           padding-top: 20px;
+        }
+    }
+    ul {
+        list-style-type: none;
+        line-height: 6vh;
+    }
+    p {
+        line-height: 6vh;
+        text-align: center;
+    }
+    .imgmedia {
+        justify-content: center;
+        align-items: center;
+        padding-right: 10px;
+        @media screen and (max-width:700px) {
+            padding-top: 20px;
+         }
+    }
+}
